@@ -1,0 +1,26 @@
+{
+  "name": "api-framework",
+  "version": "1.0.0",
+  "description": "A type-safe API framework with OpenAPI generation and runtime validation",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node --test tests/",
+    "lint": "eslint src/ tests/",
+    "openapi:gen": "node scripts/generate-openapi.js"
+  },
+  "keywords": ["api", "typescript", "openapi", "validation", "framework"],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "eslint": "^8.57.0",
+    "@types/node": "^20.11.0"
+  }
+}
